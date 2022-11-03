@@ -1,0 +1,16 @@
+version: '1.0'
+services:
+  composefile:
+    image: nodeapp
+    ports: 
+      - 3000:3000
+  composefilev2:
+    image: nginx:alpine
+    volumes:
+      - C:/DOCKER/SharedVolume:/usr/share/nginx/html:rw
+    ports: 
+      - 8080:80
+    
+
+
+  
